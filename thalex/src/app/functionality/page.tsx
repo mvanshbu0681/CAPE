@@ -421,7 +421,7 @@ export default function FunctionalityPage() {
         }"`,
         isUser: false,
         timestamp: new Date(),
-        sensitiveItems: detectedItems,
+        sensitiveItems: detectedItems as string[],
       };
 
       setWithMessages((prev) => [...prev.slice(0, -1), botResponse]);
